@@ -11,10 +11,13 @@ Encore
     .createSharedEntry('layout', './assets/js/layout.js')
     .addEntry('rep_log', './assets/js/rep_log.js')
     .addEntry('login', './assets/js/login.js')
+    .addEntry('rep_log_react', './assets/js/rep_log_react.js')
 
     .enableBuildNotifications()
     // fixes modules that expect jQuery to be global
     .autoProvidejQuery()
+
+    .enableReactPreset()
 
     .addPlugin(new CopyWebpackPlugin([
         // copies to {output}/static

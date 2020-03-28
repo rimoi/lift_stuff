@@ -10,6 +10,7 @@
 
     {% block stylesheets %}
         <link href="{{ asset('build/layout.css') }}" rel="stylesheet" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     {% endblock %}
 
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
@@ -95,11 +96,13 @@
 <!-- /container -->
 
 {% block javascripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <script src="{{ asset('bundles/fosjsrouting/js/router.js') }}"></script>
     <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.0.5/es6-promise.auto.min.js"></script>
     <script src="{{ asset('build/manifest.js') }}"></script>
     <script src="{{ asset('build/layout.js') }}"></script>
+    <script src="{{ asset('build/rep_log_react.js') }}"></script>
 {% endblock %}
 
 </body>
